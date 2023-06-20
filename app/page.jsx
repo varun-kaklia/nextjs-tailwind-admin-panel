@@ -1,5 +1,5 @@
 import Login from "./pages/Login";
-import Dashboard from "./pages/dashboard/DashboardPage";
+import Dashboard from "./pages/dashboard/Dashboard";
 // import Layout from "./pages/dashboard";
 
 export default function Home() {
