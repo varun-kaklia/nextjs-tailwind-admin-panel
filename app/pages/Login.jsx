@@ -53,7 +53,7 @@ const Login = () => {
                 <a className="text-sm text-blue-500" href="password.html">
                   Forgot Password?
                 </a>
-                <Link href="/dashboard" className="btn bg-customBlue text-white hover:bg-blue-600">
+                <Link href="/dashboard/index" className="btn bg-customBlue text-white hover:bg-blue-600">
                   Login
                 </Link>
               </div>
