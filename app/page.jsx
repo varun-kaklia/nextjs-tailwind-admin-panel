@@ -1,10 +1,9 @@
-import Login from "./pages/Login";
-import Dashboard from "./pages/dashboard/Dashboard";
+import Login from "./login/page";
 // import Layout from "./pages/dashboard";
 
 export default function Home() {
   return (
-    <div className="w-screen h-screen">
+    <div className="">
       <Login/>
       {/* <Layout component={<Dashboard/>}/> */}
     </div>

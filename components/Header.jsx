@@ -4,6 +4,7 @@ import {BiBell,BiPowerOff, BiSearch} from 'react-icons/bi'
 import {HiBars3} from 'react-icons/hi2'
 import { Menu, Transition } from "@headlessui/react";
 import classNames from "classnames";
+import Link from "next/link";
 
 const Header = ({setShowSideBar,showSideBar}) => {
     
@@ -78,20 +79,15 @@ const Header = ({setShowSideBar,showSideBar}) => {
                 </Menu.Item>
                 <Menu.Item>
                   {({ active }) => (
-                    <div
+                    <Link
+                    href={'/login'}
                       className={classNames(
                         active && 'bg-gray-100',
                         'active:bg-gray-200 flex items-center rounded-sm px-4 py-2 text-gray-700 cursor-pointer focus:bg-gray-200'
                       )}
-                      onClick={(e)=>{
-                        e.preventDefault()
-                        localStorage.removeItem('Login')
-                        localStorage.removeItem('LoginToken')
-                        window.location('/')
-                      }}
                     >
                     <span><BiPowerOff className="text-red-500" size={20}/></span>  Sign out
-                    </div>
+                    </Link>
                   )}
                 </Menu.Item>
               </Menu.Items>

@@ -39,15 +39,13 @@ const SideBar = ({ showSideBar, setShowSideBar }) => {
 				<div className='w-full flex flex-col  gap-0.5 pt-2 border-t border-white'>
 					<div
 						onClick={(e) => {
-							e.preventDefault()
-							localStorage.removeItem('Login')
-							localStorage.removeItem('LoginToken')
+							
 						}}
 						className={classNames(linkClass, 'cursor-pointer text-red-500 hover:bg-white delay-100 duration-100 hover:text-red-500 p-2')}>
-						<span className="text-xl" >
+						{/* <span className="text-xl" >
 							<HiOutlineLogout />
-						</span>
-						Logout
+						</span> */}
+						Logged in as Admin
 					</div>
 				</div>
 			{/* <div className=''>Sidebar</div> */}

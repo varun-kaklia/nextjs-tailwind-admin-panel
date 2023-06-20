@@ -2,6 +2,7 @@
 import Header from '@/components/Header'
 import SideBar from '@/components/Sidebar'
 import React, {useState } from 'react'
+import DashboardPage from './Dashboard'
 
 const Dashboard = ({component}) => {
 //   const navigate = useNavigate();
@@ -13,7 +14,7 @@ const Dashboard = ({component}) => {
       <div className="flex flex-col flex-1 w-full h-full">
         <Header showSideBar={showSideBar} setShowSideBar={setShowSideBar} />
         <div className="flex-1 min-h-0 overflow-auto no-scrollbar p-2">
-          {component}
+          <DashboardPage/>
         </div>
       </div>
     </div>

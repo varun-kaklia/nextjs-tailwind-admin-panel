@@ -7,6 +7,7 @@ const Login = () => {
     document.title="Login"
   },[])
   return (
+    <div className='w-screen h-screen'>
     <div className=" bg-customBlue w-full h-full">
     <div className="flex justify-center">
       <div className="lg:w-2/3 xl:1/3 2xl:1/3 w-2/3 md:2/3 sm:2/3 ">
@@ -53,7 +54,7 @@ const Login = () => {
                 <a className="text-sm text-blue-500" href="password.html">
                   Forgot Password?
                 </a>
-                <Link href="/dashboard/index" className="btn bg-customBlue text-white hover:bg-blue-600">
+                <Link href="/dashboard" className="btn bg-customBlue text-white hover:bg-blue-600">
                   Login
                 </Link>
               </div>
@@ -61,7 +62,7 @@ const Login = () => {
           </div>
           <div className="bg-gray-50 text-center border-t rounded-b-lg p-4 border-gray-300 py-3">
             <div className="text-sm p-2">
-              <Link href={'/Register'}>Need an account? Sign up!</Link>
+              <Link href={'/register'}>Need an account? Sign up!</Link>
             </div>
           </div>
         </div>
@@ -77,6 +78,7 @@ const Login = () => {
         <button className='text-customBlue'>Terms & Conditions</button>
       </div>
     </footer>
+  </div>
   </div>
 );
 }
